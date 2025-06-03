@@ -1,8 +1,8 @@
 :root {
     --primary-color: #DBDBDB;
     --secondary-color: #000000;
-    --primary-button-color: #ff0000bf;
-    --secondary-button-color: rgb(53, 167, 255);
+    --primary-button-color: rgba(212, 0, 0, 1);
+    --secondary-button-color: rgba(53, 167, 255, 1);
     --overlay-color: rgba(0, 0, 0, 0.5);
     --default-font: sans-serif;
     --heading-font: 'Montserrat', sans-serif;
