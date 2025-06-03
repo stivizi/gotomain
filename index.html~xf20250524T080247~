@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generic Title</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header index bg-overlay">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="index.html"><img src="assets/home/logo_light.svg" alt="Main Street Header Logo" /></a>
+        </div>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="alpha.html" class="nav-link">Alpha Club For Teens</a>
+	    <a href="join.html" class="nav-link-join">Join</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+<section class="section hero index bg-overlay">
+  <div class="container">
+    <article class="content">
+      <div class="index-content">
+        <h1>
+          BECAUSE YOU'LL <span class="highlight">NEVER</span> MAKE IT
+          <span class="highlight">ON YOUR OWN</span>
+        </h1>
+        <p>
+          WELCOME TO MAIN STREET. WE ARE EXECUTIVES, DOCTORS, LAWYERS,
+          BANKERS, ATHLETES—VISIONARIES AND TITANS IN OUR
+          FIELDS, CONNECTING WITH THE LIKE-MINDED TO
+          <span class="highlight">BUILD AND SHARE ARTIFICIAL INTELLIGENCE TOOLS</span>
+          TO EARN MORE, WORK SMARTER, AND SPREAD JOY.
+        </p>
+	<div class="hero-buttons">
+          <a href="join.html" class="btn">JOIN MAIN STREET</a>
+          <div class="more">
+            <img src="assets/home/eye.svg" alt="Main Street Logo" loading="lazy" class="eye"/>
+            <a href="join.html" class="more-btn">MORE</a>
+          </div>
+	</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+    <section class="section exclusive-network">
+      <div class="container">
+        <article class="content">
+
+          <div class="exclusive-network-content">
+            <img src="assets/home/logo_light.png" alt="Main Street Logo" loading="lazy" class="logo" />
+            <h2 class="mobile">AN EXCLUSIVE AI NETWORK FOR THE HIGH PERFORMER</h2>
+            <p>
+              MaiN Street is an elite community tailored for high performers
+              across various fields such as legal, banking, real-estate,
+              sports and entertainment and more, all eager to master Al like a
+              Samurai.</p>
+            <p>At Main Street, we merge top-tier expertise with
+              advanced Al technology to craft a unique network where members
+              maximize efficiency, boost earnings, and build influential
+              relationships through innovative Al strategies. Our members gain
+              access to exclusive Al tools and resources, empowering them to
+              stay at the forefront of their industries. </p>
+            <p>Join us to transform
+              your professional landscape with Al and connect with a global
+              network of achievers committed to excellence and innovation.</p>
+            <a href="join.html"><button class="btn">JOIN MaiN STREET</button></a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+<hr>
+    <section class="section features">
+      <div class="container">
+
+        <article class="content">
+
+          <ul class="card-list">
+            <li class="card">
+              <img src="assets/home/join_network.png" alt="Join an Elite Network Icon" loading="lazy" class="icon" />
+              <h3>JOIN<br />AN ELITE NETWORK</h3>
+              <p>
+                Connect with top performers from various fields including
+                banking, law, sports, and beyond, all dedicated to wielding Al
+                like a Samurai.
+              </p>
+            </li>
+            <li class="card">
+              <img src="assets/home/deploy_strategies.png" alt="Deploy Innovative Strategies Icon" loading="lazy"
+                class="icon" />
+              <h3>DEPLOY<br />INNOVATIVE STRATEGIES</h3>
+              <p>
+                Discover how Al can transform your practice, from optimizing
+                operational efficiencies to innovating new strategic avenues.
+              </p>
+            </li>
+            <li class="card">
+              <img src="assets/home/get_access.png" alt="Get Exclusive Access Icon" loading="lazy" class="icon" />
+              <h3>GET<br />EXCLUSIVE ACCESS</h3>
+              <div class=max-width>
+                <p>
+                  Gain entry to custom Al tools, dedicated teams, and
+                  specialized resources, ensuring you remain at the cutting edge
+                  of your industry.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+        </article>
+      </div>
+    </section>
+
+    <section class="section transform bg-overlay">
+            <div class="container">
+
+      <article class="content">
+
+        <div class="transform-content">
+          <h2>TRANSFORM YOUR PRACTICE</h2>
+          <p>
+            Don't miss your chance to be part of this exclusive community.
+            Applications are open until Sept 1st. Elevate your art with the
+            power of Al and join a network of professionals committed to
+            excellence and innovation.
+          </p>
+          <a href="join.html"><button class="btn">JOIN MaiN STREET</button></a>
+        </div>
+
+      </article></div>
+    </section>
+
+    <section class="section testimonials">
+            <div class="container">
+
+      <article class="content">
+
+        <div class="testimonials-content">
+          <img src="assets/home/quote_up.png" alt="Quote icon" loading="lazy" />
+          <figure class="testimonial-border">
+            <p>
+              The future of performance services is not human or artificial,
+              it's augmented. Every serious performer MUST learn to master
+              it. This isn't trivial to your career, It's critical.
+              Competing in this day and age without AI, is
+              <span class="highlight">like bringing a knife to a drone fight</span>. Simply put, it's AI or die.
+            </p>
+            <figcaption>YOUR CORE TEAM ON MaiN STREET</figcaption>
+          </figure>
+        </div>
+
+      </article></div>
+    </section>
+
+    <section class="section redefine bg-overlay">
+
+            <div class="container">
+
+      <article class="content">
+
+        <div class="redefine-content">
+          <h2>STEP ON TO MaiN STREET<br />AND REDEFINE WHAT'S POSSIBLE</h2>
+          <a href="join.html"><button class="btn">JOIN MaiN STREET</button></a>
+        </div>
+
+      </article>
+    </section></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/home/logo_dark.png" alt="Generic Image Alt Text" loading="lazy" />
+        <hr class="hr-short">
+        <p>THE PRIVATE AI NETWORK FOR HIGH-PERFORMING PROFESSIONALS</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

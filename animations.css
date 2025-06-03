@@ -1,0 +1,21 @@
+/* Animations */
+@keyframes kenburns {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes kenburns-zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+        /* Zoom in by 20% */
+    }
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You!</title>
+    <meta
+      name="description"
+      content="Thank you page for Main Street."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Montserrat:400,700,400italic,700italic&display=swap"
+    />
+
+    <!-- Mobile First Stylesheet -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <style>
+      body {
+        background-image: url('assets/home/brain.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+        min-height: 100vh; /* Ensure body is at least viewport height */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack children vertically */
+      }
+      main {
+        flex-grow: 1; /* Allow main content to take up available space */
+        display: flex; /* Use flexbox to center content within main */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+      }
+      .form-section-bg {
+        background-image: url('assets/about/brain.jpg');
+        background-size: cover;
+        background-position: center;
+        color: var(--primary-color); /* Assuming white text for readability on the background */
+        padding: 50px 0; /* Add some padding */
+        text-align: center; /* Center the thank you message */
+        position: relative; /* Needed for the absolute positioning of the overlay */
+      }
+      .form-section-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+        z-index: 1; /* Ensure the overlay is above the background image */
+      }
+      .thank-you-message {
+        position: relative; /* Ensure the message is above the overlay */
+        z-index: 2; /* Ensure the message is above the overlay */
+        font-size: 2em; /* Adjust font size as needed */
+        margin-top: 50px; /* Add some space from the top */
+      }
+      footer {
+        margin-top: auto; /* Push footer to the bottom */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <div class="header">
+        <div class="header-content">
+          <div class="header-logo">
+            <img src="logo_light.svg" alt="Main Street Header Logo" />
+          </div>
+          <nav>
+            <div class="nav-wrapper">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="alpha.html" class="nav-link">Alpha Club For Teens</a>
+              <a href="join.html" class="nav-link" style="color: var(--secondary-button-color);font-weight: bold;">Join</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header> -->
+
+    <main>
+      <section class="section thanks">
+        <article class="content">
+          <div class="card">            
+            <div class="text-content">
+              <h2>Thank You for Reaching Out!</h2>
+              <p>We appreciate your interest and will be in touch shortly.</p>
+              <p><a href="alpha.html" style="text-decoration:underline";>BACK TO HOME</a></p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/home/logo_dark.png" alt="Generic Image Alt Text" loading="lazy" />
+        <hr class="hr-short">
+        <p>THE PRIVATE AI NETWORK FOR HIGH-PERFORMING PROFESSIONALS</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

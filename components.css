@@ -1,0 +1,259 @@
+button.btn {
+    background: var(--primary-button-color);
+    color: var(--primary-color);
+    width: fit-content;
+    padding: var(--padding-btn);
+    border: none;
+}
+
+button.register-button {
+    background-color: var(--primary-button-color);
+    color: var(--primary-color);
+    padding: var(--padding-btn);
+    border: none;
+}
+
+.hero-content.about {
+    text-align: center;
+    flex-direction: column;
+    padding: var(--gap-extra-large) 0;
+    gap: 3em;
+}
+
+article.content {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-extra-large);
+}
+
+
+.about-alpha article.content {
+    color: var(--secondary-color);
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-extra-large);
+}
+
+.exclusive-network-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+}
+
+img.logo {
+    max-width: 200px;
+}
+
+.max-width p {
+    margin: 0 auto;
+}
+
+ul.card-list {
+    align-items: center;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: auto;
+    gap: var(--gap-large);
+    padding-bottom: 0;
+    margin-bottom: 3em;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+hr.hr-short {
+    border: 1px solid var(--primary-color);
+    display: block;
+    max-width: 300px;
+    background: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    opacity: 50%;
+}
+
+.image-content.flip {
+    order: 0;
+}
+
+article.card {
+    gap: var(--gap-large);
+    max-width: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+}
+
+.image-content {
+    width: 100%;
+    position: relative;
+}
+
+.image-content-flip {
+    position: relative;
+}
+
+.card .image-content h2.display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.card .image-content-flip h2.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: 0;
+    display: none;
+}
+
+h2.no-background {
+    background: none;
+}
+
+.card .image-content h2.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: none;
+    display: none;
+}
+
+h2.desktop {
+    display: none;
+}
+
+h2.desktop {
+    display: block;
+    width: fit-content;
+    background: none;
+}
+
+section.section.join {
+    background-image: url(assets/about/brain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.quote-container {
+    min-height: fit-content;
+}
+
+.quote h3 {
+    line-height: 1.8;
+}
+
+section.section.cta.join-network.bg-overlay {
+    padding: 4em 0;
+    margin: var(--spacing-extra-large) 0;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    min-height: unset;
+    position: relative; /* Added for positioning ::before */
+}
+
+.card-image {
+    flex-shrink: 0;
+}
+
+.card-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cta.alpha-club .container {
+    display: flex;
+    align-content: flex-start;
+}
+
+section.section.cta.alpha-club.bg-overlay::before {
+    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+    /* background-color: #000000; */
+    background-position: -400px;
+    animation: none;
+}
+
+section.section.cta.enroll.bg-overlay::before {
+    background-image: url(assets/alpha/network_finger_touch_girl.jpeg);
+}
+
+.container-cards article.content {
+    padding: 0;
+    margin: 0;
+}
+
+.become-an-expert {
+    position: relative;
+    min-height: 33vh;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.become-an-expert.bg-overlay::before {
+    background-image: url(assets/about/become_ai_expert_cyborg.jpg);
+    background-position: top;
+}
+
+.enroll .bg-overlay {
+    background-image: url(assets/alpha/network_finger_touch_girl.jpeg);
+}
+
+section.section.hero.about-alpha.bg-overlay {
+    height: fit-content;
+    background-color: white;
+}

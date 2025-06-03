@@ -1,0 +1,846 @@
+/* Layout Styles */
+
+.header {
+    /* Needed for the pseudo-element positioning */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    z-index: 0; /* Increased z-index to ensure it's above other elements */
+    height: 100vh;
+}
+
+    section.section.hero.index.bg-overlay {
+    position: relative;
+    overflow: hidden; /* Prevent overflow from the ken burns effect */
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.header.alpha-club.bg-overlay::before {
+    background-image: url(assets/alpha/club/equip_your_child.jpg);
+    background-position: -300px;
+}
+
+header .header.bg-overlay::before {
+    background-image: url(assets/alpha/club/networked_brains.jpg);
+}
+
+.header.about.bg-overlay::before {
+    background-image: url(assets/about/cyborg_face_hero_color.jpg);
+    background-position: left;
+}
+
+.header.index.bg-overlay::before {
+    background-image: url(assets/home/empty_street.jpg);
+}
+
+.header.alpha.bg-overlay {
+    position: relative;
+}
+
+.header.alpha.join.bg-overlay {
+    display: none;
+}
+
+.header.alpha.bg-overlay::before {
+    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+background-position: center;
+}
+
+.header-logo {
+    height: auto;
+    display: flex;
+    max-width: 90%;
+}
+
+.header-logo img {
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: var(--spacing-extra-large) 0;
+     /* Removed min-height */
+    position: relative; /* Changed position from sticky to relative */
+    top: 0;
+     /* Increased z-index to be above header pseudo-elements */
+    height: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: var(--gap-medium);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex: 0;
+    flex-direction: column;
+    align-content: center;
+    width: 85vw;
+}
+
+.container {
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container.full-width {
+    width: 100%;
+}
+
+
+figcaption {
+    text-align: center;
+    padding: var(--padding-testimonial-border);
+}
+
+section.section.hero.index::before {
+    background-color: var(--primary-color);
+    color: black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+
+section.section.alpha.index.hero.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+    background-blend-mode: darken; /* Assuming darken blend mode is desired */
+    background-position: right; /* Assuming center position is desired */
+    background-repeat: no-repeat; /* Assuming no-repeat is desired */
+    background-size: cover;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    background-color: var(--overlay-color);
+}
+
+section.section.hero.index .content {
+    position: relative;
+    z-index: 2;
+}
+
+section.section.who-are-we {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+img.icon {
+    width: fit-content;
+    max-height: 70px;
+}
+
+section.section.features {
+    /* border-bottom: 1px solid var(--primary-color); */
+    border-top: 1px solid --primary-color;
+    /* opacity: 50%; */
+}
+
+.transform-section-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.transform-section-bg.bg-overlay::before {
+    background-image: url(assets/home/man_woman_laughing.jpg);
+}
+
+.transform-section-bg article {
+    position: relative;
+    z-index: 2;
+}
+
+.transform-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+}
+
+.testimonials img {
+    max-width: 50px;
+}
+
+figure.testimonial-border {
+    margin: var(--spacing-small);
+    padding: var(--spacing-small);
+    border: 1px solid;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.redefine {
+    position: relative;
+    z-index: 1;
+}
+
+.redefine.bg-overlay::before {
+    background-image: url(assets/home/empty_street.jpg);
+}
+
+.redefine-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-extra-large);
+}
+
+.transform {
+    position: relative;
+    z-index: 1;
+}
+
+.transform.bg-overlay::before {
+    background-image: url(assets/home/woman_leading_crowd.jpg);
+}
+
+.join-network {
+    position: relative;
+    margin-bottom: var(--gap-extra-large);
+    min-height: 50vh;
+    z-index: 1;
+}
+
+.join-network.bg-overlay::before {
+    background-image: url(assets/home/woman_leading_crowd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.selfie {
+    position: relative;
+    z-index: 1;
+}
+
+.selfie.bg-overlay::before {
+    background-image: url(assets/home/woman_leading_crowd.jpg);
+}
+
+.cta-section {
+    position: relative;
+    z-index: 1;
+}
+
+section.section.cta.laptop.bg-overlay::before {
+    background-image: url(assets/alpha/teen_two_phones_chat.jpg);
+}
+
+.hero-index {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-index.bg-overlay::before {
+    background-image: url(assets/home/woman_leading_crowd.jpg);
+}
+
+section.section.join-network article {
+    position: relative;
+    z-index: 2;
+}
+
+.section {
+    margin: 0 auto;
+    align-items: center;
+    padding: var(--spacing-extra-large) 0;
+}
+
+.learn,
+.use,
+.cta.alpha-club {
+background-color:black;
+}
+
+.do,
+.projects {}
+
+
+section.section.alpha-club.hero.bg-overlay {
+    /* background-color: white; */
+    /* color: black; */
+}
+
+
+.section.alpha-club {
+    border-bottom: 1px solid;
+}
+
+section.section.cta.alpha-club.bg-overlay {
+    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+    position:relative;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--overlay-color);
+    background-blend-mode: darken;
+}
+
+section.section.cards {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+section.section.hero.index.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/home/empty_street.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    animation: kenburns-zoom 30s infinite alternate; /* Add ken burns zoom animation */
+}
+
+article {
+    gap: var(--spacing-small);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+
+.full-width h2 {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: var(--h2-mobile);
+}
+
+.card-text h3 {
+    background-color: var(--h2-mobile);
+    width: 100%;
+    padding: var(--padding-btn);
+    margin-top: 0em;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+button.btn {
+    background: var(--primary-button-color);
+    color: var(--primary-color);
+    width: fit-content;
+    padding: var(--padding-btn);
+    border: none;
+}
+
+button.register-button {
+    background-color: var(--primary-button-color);
+    color: var(--primary-color);
+    padding: var(--padding-btn);
+    border: none;
+}
+
+.hero-content.about {
+    text-align: center;
+    flex-direction: column;
+    padding: var(--gap-extra-large) 0;
+    gap: 3em;
+}
+
+article.content {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-extra-large);
+}
+
+article.hero-content.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-alpha article.content {
+    color: var(--secondary-color);
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-extra-large);
+}
+
+.exclusive-network-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+}
+
+img.logo {
+    max-width: 200px;
+}
+
+.max-width p {
+    /* max-width: 75%; */
+    margin: 0 auto;
+}
+
+ul.card-list {
+    align-items: center;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: auto;
+    padding: 0 0 var(--spacing-extra-large) 0;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+hr.hr-short {
+    border: 1px black solid;
+    display: block;
+    max-width: 300px;
+    /* opacity: 50%; */
+    background: black;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.image-content.flip {
+    order: 0;
+}
+
+article.card {
+    gap: var(--gap-large);
+    max-width: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    width: 100%;
+}
+
+.image-content {
+    width: 100vw;
+    position: relative;
+}
+
+.image-content-flip {
+    position: relative;
+}
+
+.card .image-content h2.display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.card .image-content-flip h2.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: 0;
+    display: none;
+}
+
+h2.no-background {
+    background: none;
+}
+
+.card .image-content h2.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: none;
+    display: none;
+}
+
+h2.desktop {
+    display: none;
+}
+
+h2.desktop {
+    display: block;
+    width: fit-content;
+    background: none;
+}
+
+section.section.join {
+    background-image: url(assets/about/brain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote-container {
+    min-height: fit-content;
+}
+
+.quote h3 {
+    line-height: 1.8;
+}
+
+footer .container {
+    min-height: auto;
+    padding: 1em;
+}
+
+section.section.cta.join-network.bg-overlay {
+    padding: 4em 0;
+    margin: var(--spacing-extra-large) 0;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    min-height: 33vh;
+}
+
+section.section.cta.laptop.bg-overlay {
+    position: relative;
+}
+
+.container-cards article.content {
+    padding: 0;
+}
+
+.container-cards {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.become-an-expert {
+    position: relative;
+    min-height: 33vh;
+    z-index: 1;
+    margin-top: var(--spacing-extra-large);
+}
+
+.become-an-expert.bg-overlay::before {
+    background-image: url(assets/about/become_ai_expert_cyborg.jpg);
+    background-position: top;
+}
+
+.enroll {
+    position: relative;
+}
+
+.header.about-alpha.bg-overlay {
+    height: 100vh;
+}
+
+
+hr.display {
+    display: none;
+}
+
+/* Layout styles moved from components.css */
+.container {
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container.full-width {
+    width: 100%;
+}
+
+.learn,
+.use,
+.cta.alpha-club {
+background-color:black;
+}
+
+.do,
+.projects {}
+
+
+section.section.alpha-club.hero.bg-overlay {
+    background-color: black;
+    color: white;
+}
+
+section.section.alpha-club.hero.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/alpha/club/equip_your_child.jpg); /* Assuming this is the correct image */
+    background-blend-mode: darken; /* Assuming darken blend mode is desired */
+    background-position: center; /* Assuming center position is desired */
+    background-repeat: no-repeat; /* Assuming no-repeat is desired */
+    background-size: cover;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+
+.section.alpha-club {
+    border-bottom: 1px solid #ffffff5e;
+}
+
+section.section.alpha-club.advantage {
+    background-color: white;
+}
+
+section.section.alpha-club.advantage .claim h3 {
+    color: black;
+}
+
+section.section.cta.alpha-club.bg-overlay {
+    background-image: url(assets/alpha/asian_teen_book_libary_ai.jpg);
+    position:relative;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--overlay-color);
+    background-blend-mode: darken;
+}
+
+section.section.skills {
+    padding: 0;
+}
+
+section.section.cards {
+    padding: 0;
+    width: 100%;
+    margin: 4em auto;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    min-height: 33vh;
+}
+
+section.section.cta.laptop.bg-overlay {
+    position: relative;
+}
+
+.container-cards article.content {
+    padding: 0;
+}
+
+.container-cards {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.become-an-expert {
+    position: relative;
+    min-height: 33vh;
+    z-index: 1;
+    margin-top: var(--spacing-extra-large);
+}
+
+.become-an-expert.bg-overlay::before {
+    background-image: url(assets/about/become_ai_expert_cyborg.jpg);
+    background-position: top;
+}
+
+.enroll {
+    position: relative;
+}
+
+section.section.hero.about-alpha.bg-overlay {
+    height: fit-content;
+    background-color: white;
+}
+
+
+a.nav-link-join {
+    background-color: var(--primary-button-color);
+}
+
+a.nav-link-join-blue {
+    background-color: var(--h2-mobile);
+    width: 100%;
+    text-align: center;
+    padding: var(--padding-btn);
+}
+
+section.section.hero.about-alpha.bg-overlay::before {
+    display: none;
+}
+
+section.section.alpha-club.hero.bg-overlay::before {
+    position: relative;
+}
+
+
+.claim {
+    max-width: 95%;
+}
+
+.skills .card-image {
+    margin: -10px;
+}
+
+section.section.cta.enroll.bg-overlay {
+    margin-top: 1em;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 4em;
+    gap: var(--spacing-medium);
+}
+
+a.btn {
+    background-color: var(--primary-button-color);
+    padding: var(--padding-btn);
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 3em;
+    width: fit-content;
+    text-align: center;
+}
+
+.more {
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-small);
+    border: 1px solid;
+    padding: var(--padding-btn);
+    width: 100%;
+    /* display: none; */
+}
+
+
+.header .more {
+    display: flex;
+}
+
+.more.hero {
+    display: none;
+}
+
+.hero .more {
+    display: none;
+}
+
+img.eye {
+    width: fit-content;
+    max-height: 1em;
+    /* display: none; */
+}
+
+span.join-label-desktop {
+    display: inline;
+}
+
+header span.join-label-desktop {
+    display: none;
+}

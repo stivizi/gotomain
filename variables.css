@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #DBDBDB;
+    --secondary-color: #000000;
+    --primary-button-color: #ff0000bf;
+    --secondary-button-color: rgb(53, 167, 255);
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --default-font: sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --spacing-small: 0.714em;
+    --spacing-medium: 1.429em;
+    --spacing-large: 2.857em;
+    --spacing-extra-large: 4.286em;
+    --spacing-section: 7.143em 0;
+    --padding-section: 7.143em 0;
+    --padding-article-mobile: 0 1%;
+    --padding-article-desktop: 0 8%;
+    --padding-header-mobile: 0 1%;
+    --padding-header-desktop: 0 8%;
+    --max-width-hr: 100%;
+    --max-height-img-small: 4.286em;
+    --max-height-img-medium: 7.143em;
+    --padding-btn: 0.714em 0.714em;
+    --padding-testimonial-border: 0.714em;
+    --min-height-align: 50vh;
+    --gap-small: 0.714em;
+    --gap-medium: 1.429em;
+    --gap-large: 2.857em;
+    --gap-extra-large: 4.286em;
+    --min-height-hero-align: 93vh;
+    --height-hero-align-desktop: 50vh;
+    --max-width-testimonial-content: 66%;
+    --max-width-testimonial-item: 28.571em;
+    --padding-article-default: 0 4%;
+    --h2-mobile: #35a7ffab;
+}

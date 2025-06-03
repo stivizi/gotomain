@@ -1,0 +1,188 @@
+/* Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* display: none; */
+    background-color: black;
+    } /* Changed z-index to auto */
+
+/* Reusable base class for shared ::before styles */
+
+.bg-overlay::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--overlay-color);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./assets/home/empty_street.jpg);
+    animation: kenburns-zoom 30s infinite alternate;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--default-font);
+    font-size: 1em;
+    /* Base font size */
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+h2 {
+    margin: 0;
+    margin-bottom: var(--spacing-medium);
+    padding: var(--padding-btn);
+    background: none;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    line-height: 1.4;
+    background: none;
+    color: var(--primary-color);
+}
+
+h4 {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+full-width .text-content p {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    max-width: var(--max-width-hr);
+    height: 1px;
+    background-color: var(--primary-color);
+    /* border: 1px solid #ffffff; */
+    opacity: 33%;
+}
+
+.hide {
+   display: none
+}
+
+hr.skills {
+    margin: var(--padding-section);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+a.nav-link,
+a.nav-link-join {
+    background-color: #ffffff2e;
+    width: 100%;
+    text-align: center;
+    padding: var(--padding-btn);
+    text-transform: capitalize;
+    padding: 1em;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--gap-extra-large);
+}
+
+li {
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-small);
+}
+
+.about-alpha .card-list li {
+    border-bottom: 1px solid;
+    width: 100vw;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.card-text p {
+    max-width: 90%;
+}
+
+main {
+    position: relative;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: black;
+    position: relative;
+}
