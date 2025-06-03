@@ -216,6 +216,7 @@ figure.testimonial-border {
 
 .redefine.bg-overlay::before {
     background-image: url(assets/home/empty_street.jpg);
+    animation: none;
 }
 
 .redefine-content {
