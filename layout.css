@@ -99,7 +99,7 @@ nav {
     flex: 0;
     flex-direction: column;
     align-content: center;
-    width: 85vw;
+    width: 90vw;
 }
 
 .container {
@@ -356,6 +356,9 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.header h1 {
+    max-width: 90%;
+}
 
 .full-width h2 {
     width: 100%;
