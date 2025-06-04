@@ -231,7 +231,7 @@
     }
 
     .header.bg-overlay {
-        height: auto;
+        min-height: fit-content;
         padding: 1em 0;
     }
 
