@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kids AI Club</title>
+  <title>teens AI Club</title>
   <link rel="stylesheet" href="variables.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="layout.css">
@@ -41,7 +41,7 @@
       <div class="container">
         <article class="content">
           <h1>Equip Your Child with Essential AI Skills</h1>
-          <p>The Kids AI Club provides children with practical AI knowledge for future success. We teach the tools and techniques used in business today, plus some that will be used in the future.</p>
+          <p>The teens AI Club provides children with practical AI knowledge for future success. We teach the tools and techniques used in business today, plus some that will be used in the future.</p>
         </article>
       </div>
     </section>
@@ -190,7 +190,7 @@
       <div class="container">
         <article class="content">
           <h2>Ready to Equip Your Child for the Future?</h2>
-          <h3>Register your child for the Kids AI Club today and invest in their future.</h3>
+          <h3>Register your child for the teens AI Club today and invest in their future.</h3>
           <a href="alpha_join.html"><button class="register-button">Register Now!</button></a>
         </article>
       </div>

@@ -4,7 +4,7 @@ This repository contains the code for the Main Street and Generation Alpha websi
 
 **Main Street** is a private AI network for high-performing professionals across various fields, focused on leveraging AI for efficiency, earnings, and relationships.
 
-**Generation Alpha** is dedicated to empowering the next generation with AI knowledge and skills, including a **Kids AI Club** for hands-on learning.
+**Generation Alpha** is dedicated to empowering the next generation with AI knowledge and skills, including a **teens AI Club** for hands-on learning.
 
 ## Viewing the Site
 

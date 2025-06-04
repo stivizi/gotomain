@@ -215,7 +215,7 @@ figure.testimonial-border {
 }
 
 .redefine.bg-overlay::before {
-    background-image: url(assets/home/empty_street.jpg);
+    background-image: url(assets/home/businessman-street-reflection.jpg);
     animation: none;
 }
 

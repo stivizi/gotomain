@@ -1,6 +1,6 @@
 # Equip Your Child with Essential AI Skills
 
-The Kids AI Club provides children with practical AI knowledge for future success. We teach the tools and techniques used in business today, plus some that will be used in the future.
+The teens AI Club provides children with practical AI knowledge for future success. We teach the tools and techniques used in business today, plus some that will be used in the future.
 
 Give your child a competitive advantage. Join a club focused on hands-on learning and real-world application. Club activities include group lessons, build sessions, private coaching, and exclusive access to members, students, and alumni.
 
@@ -34,7 +34,7 @@ Value is no longer in the answers you have but the questions you seek. Knowing w
 
 ## What Your Child Will Use: Industry-Relevant Technologies
 
-We equip kids with tools relevant to industry.
+We equip teens with tools relevant to industry.
 
 ### Proficiency with Industry Tools and Processes
 *Mastering the technologies used by leading companies.*
@@ -55,4 +55,4 @@ Your child will gain hands-on experience building pipelines, workflows, and agen
 
 Working in a team, your child will participate in collaborative club projects that are determined by group vote. These projects will involve using agentic systems to address real-world challenges, fostering teamwork and practical application of AI. See [Collaborative Projects](imagine.md) for examples.
 
-Register your child for the Kids AI Club today and invest in their future.
+Register your child for the teens AI Club today and invest in their future.
