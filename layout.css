@@ -10,6 +10,11 @@
     height: 100vh;
 }
 
+.header.alpha-club.bg-overlay::before {
+    background-image: url(assets/alpha/club/equip_your_child.jpg);
+    background-position-x: -380px;
+}
+
     section.section.hero.index.bg-overlay {
     position: relative;
     overflow: hidden; /* Prevent overflow from the ken burns effect */
@@ -17,6 +22,14 @@
     color: black;
 }
 
+<<<<<<< Updated upstream
+=======
+span.highlight {
+    background-color: var(--primary-button-color);
+    color: var(--primary-color);
+}
+
+>>>>>>> Stashed changes
 .header.alpha-club.bg-overlay::before {
     background-image: url(assets/alpha/club/equip_your_child.jpg);
     background-position: -300px;
@@ -63,11 +76,11 @@ background-position: right;
 .header-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    gap: var(--spacing-extra-large) 0;
+    /* gap: var(--spacing-medium) 0; */
      /* Removed min-height */
     position: relative; /* Changed position from sticky to relative */
     top: 0;
@@ -639,6 +652,10 @@ hr.display {
     height: 100%;
 }
 
+.container.hero-container {
+    min-height: 81vh;
+}
+
 .container.full-width {
     width: 100%;
 }
@@ -768,7 +785,7 @@ section.section.hero.about-alpha.bg-overlay::before {
     display: none;
 }
 
-section.section.alpha-club.hero.bg-overlay::before {
+section.section.alpha-club.hero.bg-overlay {
     position: relative;
 }
 

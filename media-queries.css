@@ -113,10 +113,11 @@
      /* Prevent overflow from the ken burns effect */
     height: fit-content;
     position: relative;
+    padding: 0;
 }
 
     section.section.hero.index.bg-overlay .container {
-    min-height: 80vh;
+    min-height: 88vh;
 }
 
 
@@ -359,6 +360,10 @@ article.hero-content.about {
         font-size: 3em;
     }
 
+    .header-content h1 {
+    display: none;
+}
+    
     h2 {
         font-size: 2em;
     }
@@ -428,6 +433,7 @@ a.nav-link-join-blue {
 .card {
     width: 90%;
     margin-bottom: 4em;
+    gap: var(--gap-large);
 }
 
 .card-text h3 {
@@ -537,6 +543,33 @@ a.nav-link-join-blue {
     .join-label-mobile {
         display: inline;
     }
+<<<<<<< Updated upstream
     
 
     
+=======
+}
+    .join-label-mobile {
+        display: inline;
+    }
+
+section#about-hero-anchor {
+    position: relative;
+    padding: 0;
+}
+
+section#about-hero-anchor::before {
+    background-image: url(assets/about/cyborg_face_hero_color.jpg);
+}
+
+.hero-content.about {
+    /* min-height: 100vh; */
+    margin:0;
+    padding:0;
+    display: flex;
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
+}
+>>>>>>> Stashed changes
