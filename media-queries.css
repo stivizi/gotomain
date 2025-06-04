@@ -559,4 +559,9 @@
         padding: 0;
         display: flex;
     }
+
+    section#about-hero-anchor {
+    display: initial;
+}
+    
 }

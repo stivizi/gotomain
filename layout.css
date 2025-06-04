@@ -289,6 +289,8 @@ section.section.join-network article {
     z-index: 2;
 }
 
+
+
 .section {
     margin: 0 auto;
     align-items: center;
@@ -855,5 +857,9 @@ span.join-label-desktop {
 }
 
 header span.join-label-desktop {
+    display: none;
+}
+
+section#about-hero-anchor {
     display: none;
 }
