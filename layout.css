@@ -17,6 +17,10 @@
     color: black;
 }
 
+span.highlight {
+    background-color: var(--primary-button-color);
+}
+
 .header.alpha-club.bg-overlay::before {
     background-image: url(assets/alpha/club/equip_your_child.jpg);
     background-position: -300px;
@@ -360,9 +364,9 @@ h1, h2, h3 {
 }
 
 .card-text h3 {
-    background-color: var(--h2-mobile);
+    /* background-color: var(--h2-mobile); */
     width: 100%;
-    padding: var(--padding-btn);
+    /* padding: var(--padding-btn); */
     margin-top: 0em;
     color: var(--secondary-color);
     font-weight: bold;

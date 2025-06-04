@@ -363,6 +363,10 @@ article.hero-content.about {
         font-size: 2em;
     }
 
+    h3 {
+        font-size: 1.5em;
+    }
+
     .full-width h2 {
     width: 100%;
     color: black;
@@ -527,16 +531,13 @@ a.nav-link-join-blue {
 .join-label-mobile {
     display: none;
 }
-.join-label-desktop {
-    display: inline;
-}
-
     .join-label-desktop {
         display: none;
     }
     .join-label-mobile {
         display: inline;
     }
-    
-
-    
+}
+    .join-label-mobile {
+        display: inline;
+    }
