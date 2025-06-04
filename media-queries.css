@@ -107,18 +107,13 @@
     section.section.hero.index.bg-overlay {
         background-color: var(--overlay-color);
         /* Prevent overflow from the ken burns effect */
-        height: fit-content;
         position: relative;
         padding: 0;
     }
 
-    section.section.hero.index.bg-overlay .container {
-        min-height: 88vh;
-    }
-
     .alpha.index.hero {
         position: relative;
-        height: 100vh;
+        /* height: 100vh; */
         overflow: hidden;
         background-image: url(./assets/alpha/asian_teen_book_libary_ai.jpg);
         background-position: center;
@@ -227,7 +222,7 @@
 
     .hero.about-alpha.bg-overlay::before {
         background-image: url(./assets/alpha/teen_crowd_selfie_outside_mixed_race.jpg);
-        height: 100vh;
+        height: 100%;
     }
 
     .header.bg-overlay {
@@ -251,8 +246,8 @@
 
     .hero article.content {
         color: var(--primary-color);
-        /* max-width: 60%; */
         gap: var(--gap-medium);
+        min-height: 92vh;
     }
 
     .alpha-club.hero article.content {
@@ -273,12 +268,14 @@
 
     section.section.hero.about-alpha.bg-overlay {
         background-color: unset;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
         align-items: center;
+        padding: 0;
+        margin: 0;
+        position: relative;
     }
 
     section.section.alpha.index.bg-overlay {
@@ -327,7 +324,7 @@
     .index-content {
         display: flex;
         justify-content: center;
-        /* min-height: 88vh; */
+        min-height: 92vh;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
@@ -547,6 +544,7 @@
     section#about-hero-anchor {
         position: relative;
         padding: 0;
+        display: flex;
     }
 
     section#about-hero-anchor::before {
@@ -554,14 +552,19 @@
     }
 
     .hero-content.about {
-        /* min-height: 100vh; */
+        min-height: 92vh;
         margin: 0;
         padding: 0;
         display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
-    section#about-hero-anchor {
-    display: initial;
-}
-    
+    header {
+    height: 8vh;
+    }
+
+
 }

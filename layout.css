@@ -81,6 +81,7 @@ background-position: right;
     top: 0;
      /* Increased z-index to be above header pseudo-elements */
     height: 100%;
+    justify-content: center;
 }
 
 .nav-wrapper {
@@ -639,18 +640,6 @@ hr.display {
 }
 
 /* Layout styles moved from components.css */
-.container {
-    max-width: 1920px;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
 
 .container.hero-container {
     min-height: 81vh;
