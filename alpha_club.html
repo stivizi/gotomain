@@ -46,7 +46,7 @@
 
     <section id="alpha-club-hero-anchor" class="section alpha-club hero bg-overlay">
       <div class="container">
-        <article class="content">
+        <article class="content hidden-content">
           <h1>Equip Your Teen with Essential AI Skills</h1>
           <p>Generation Alpha provides your teen with practical AI knowledge for future success. We teach the tools and techniques used in business today, plus some that will be used in the future.</p>
                 <div class="hero-buttons">
@@ -221,6 +221,42 @@
       </div>
     </div>
   </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.section.alpha-club.hero.bg-overlay');
+    const heroContent = document.querySelector('.section.alpha-club.hero.bg-overlay article.content');
+    if (heroSection && heroContent) {
+      const style = getComputedStyle(heroSection);
+      const backgroundImage = style.backgroundImage;
+      if (backgroundImage && backgroundImage !== 'none') {
+        const urlMatch = backgroundImage.match(/url\("?(.+?)"?\)/);
+        if (urlMatch && urlMatch[1]) {
+          const imageUrl = urlMatch[1];
+          const img = new Image();
+          img.onload = function() {
+            heroContent.classList.remove('hidden-content');
+          };
+          img.onerror = function() {
+            // If image fails to load, still show content after a delay
+            setTimeout(function() {
+              heroContent.classList.remove('hidden-content');
+            }, 500); // Adjust delay as needed
+          };
+          img.src = imageUrl;
+        } else {
+           // If no background image URL found, show content after a delay
+           setTimeout(function() {
+             heroContent.classList.remove('hidden-content');
+           }, 100); // Adjust delay as needed
+        }
+      } else {
+        // If no background image, show content immediately
+        heroContent.classList.remove('hidden-content');
+      }
+    }
+  });
+</script>
 
 </body>
 

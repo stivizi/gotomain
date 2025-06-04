@@ -52,7 +52,7 @@
 
      <section id="about-hero-anchor" class="section hero about high-performers bg-overlay">
             <div class="container hero-container">
-                <div class="hero-content about">
+                <div class="hero-content about hidden-content">
                     <h1>AI FOR HIGH PERFORMERS</h1>
                         <p>Welcome to MaiN Street, where the future of business and personal performance unfolds through the
                             lens of artificial intelligence. We are a vibrant community of forward-thinkers, a collective of
@@ -229,6 +229,42 @@
       </div>
     </div>
   </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.section.hero.about.high-performers.bg-overlay');
+    const heroContent = document.querySelector('.hero-content.about');
+    if (heroSection && heroContent) {
+      const style = getComputedStyle(heroSection);
+      const backgroundImage = style.backgroundImage;
+      if (backgroundImage && backgroundImage !== 'none') {
+        const urlMatch = backgroundImage.match(/url\("?(.+?)"?\)/);
+        if (urlMatch && urlMatch[1]) {
+          const imageUrl = urlMatch[1];
+          const img = new Image();
+          img.onload = function() {
+            heroContent.classList.remove('hidden-content');
+          };
+          img.onerror = function() {
+            // If image fails to load, still show content after a delay
+            setTimeout(function() {
+              heroContent.classList.remove('hidden-content');
+            }, 500); // Adjust delay as needed
+          };
+          img.src = imageUrl;
+        } else {
+           // If no background image URL found, show content after a delay
+           setTimeout(function() {
+             heroContent.classList.remove('hidden-content');
+           }, 100); // Adjust delay as needed
+        }
+      } else {
+        // If no background image, show content immediately
+        heroContent.classList.remove('hidden-content');
+      }
+    }
+  });
+</script>
 
 </body>
 

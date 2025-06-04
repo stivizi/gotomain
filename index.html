@@ -52,7 +52,7 @@
 <section id="header-anchor" class="section hero index bg-overlay">
   <div class="container">
     <article class="content">
-      <div class="index-content">
+      <div class="index-content hidden-content">
         <h1>
           BECAUSE YOU'LL <span class="highlight">NEVER</span> MAKE IT
           <span class="highlight">ON YOUR OWN</span>
@@ -211,7 +211,41 @@
     </div>
   </footer>
 
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.section.hero.index.bg-overlay');
+    const heroContent = document.querySelector('.index-content');
+    if (heroSection && heroContent) {
+      const style = getComputedStyle(heroSection);
+      const backgroundImage = style.backgroundImage;
+      if (backgroundImage && backgroundImage !== 'none') {
+        const urlMatch = backgroundImage.match(/url\("?(.+?)"?\)/);
+        if (urlMatch && urlMatch[1]) {
+          const imageUrl = urlMatch[1];
+          const img = new Image();
+          img.onload = function() {
+            heroContent.classList.remove('hidden-content');
+          };
+          img.onerror = function() {
+            // If image fails to load, still show content after a delay
+            setTimeout(function() {
+              heroContent.classList.remove('hidden-content');
+            }, 500); // Adjust delay as needed
+          };
+          img.src = imageUrl;
+        } else {
+           // If no background image URL found, show content after a delay
+           setTimeout(function() {
+             heroContent.classList.remove('hidden-content');
+           }, 100); // Adjust delay as needed
+        }
+      } else {
+        // If no background image, show content immediately
+        heroContent.classList.remove('hidden-content');
+      }
+    }
+  });
+</script>
 
 
 </body>

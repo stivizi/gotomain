@@ -46,7 +46,7 @@
 
      <section id="anchor" class="section alpha index hero bg-overlay">
     <div class="container">
-        <article class="content">
+        <article class="content hidden-content">
                 <h1>Empower Your Teenager with the Future of AI</h1>
                 <p>Ignite their potential and prepare them for a world transformed by artificial intelligence. Generation Alpha provides an exciting, hands-on journey into the tools and techniques that are shaping tomorrow.</p>
                 <div class="hero-buttons">
@@ -114,6 +114,42 @@
       </div>
     </div>
   </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.section.alpha.index.hero.bg-overlay');
+    const heroContent = document.querySelector('.section.alpha.index.hero.bg-overlay article.content');
+    if (heroSection && heroContent) {
+      const style = getComputedStyle(heroSection);
+      const backgroundImage = style.backgroundImage;
+      if (backgroundImage && backgroundImage !== 'none') {
+        const urlMatch = backgroundImage.match(/url\("?(.+?)"?\)/);
+        if (urlMatch && urlMatch[1]) {
+          const imageUrl = urlMatch[1];
+          const img = new Image();
+          img.onload = function() {
+            heroContent.classList.remove('hidden-content');
+          };
+          img.onerror = function() {
+            // If image fails to load, still show content after a delay
+            setTimeout(function() {
+              heroContent.classList.remove('hidden-content');
+            }, 500); // Adjust delay as needed
+          };
+          img.src = imageUrl;
+        } else {
+           // If no background image URL found, show content after a delay
+           setTimeout(function() {
+             heroContent.classList.remove('hidden-content');
+           }, 100); // Adjust delay as needed
+        }
+      } else {
+        // If no background image, show content immediately
+        heroContent.classList.remove('hidden-content');
+      }
+    }
+  });
+</script>
 
 </body>
 
