@@ -1,8 +1,6 @@
-
-
 @media only screen and (min-width: 1024px) {
 
-        hr.display {
+    hr.display {
         display: none;
     }
 
@@ -20,7 +18,7 @@
     .join-label-mobile {
         display: inline;
     }
-    
+
     article {
         flex-direction: column;
         gap: var(--gap-medium);
@@ -101,24 +99,22 @@
         max-width: 1920px;
     }
 
-
-
     section.section.hero.index {
         /* height: 94vh; */
         /* color: var(--primary-color); */
     }
 
     section.section.hero.index.bg-overlay {
-    background-color: var(--overlay-color);
-     /* Prevent overflow from the ken burns effect */
-    height: fit-content;
-    position: relative;
-}
+        background-color: var(--overlay-color);
+        /* Prevent overflow from the ken burns effect */
+        height: fit-content;
+        position: relative;
+        padding: 0;
+    }
 
     section.section.hero.index.bg-overlay .container {
-    min-height: 80vh;
-}
-
+        min-height: 88vh;
+    }
 
     .alpha.index.hero {
         position: relative;
@@ -130,7 +126,6 @@
         background-repeat: no-repeat;
         z-index: 1;
     }
-
 
     a.nav-link, a.nav-link-join {
         background-color: black;
@@ -160,15 +155,13 @@
         text-decoration-color: var(--secondary-button-color);
     }
 
-
     .index-content {
         display: flex;
+        justify-content: center;
+        /* min-height: 88vh; */
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        justify-content: center;
-        align-items: center;
-        gap: var(--gap-large);
     }
 
     .image-content.flip {
@@ -224,112 +217,114 @@
         gap: var(--gap-medium);
     }
 
-
     .header.alpha.bg-overlay::before {
-    background: none;
-}
+        background: none;
+    }
 
     .header.bg-overlay::before {
-    display: none;
-}
+        display: none;
+    }
 
     .hero.about-alpha.bg-overlay::before {
-    background-image: url(./assets/alpha/teen_crowd_selfie_outside_mixed_race.jpg);
-    height: 100vh;
-}
+        background-image: url(./assets/alpha/teen_crowd_selfie_outside_mixed_race.jpg);
+        height: 100vh;
+    }
 
     .header.bg-overlay {
-    height: auto;
-    padding: 1em 0;
-}
+        height: auto;
+        padding: 1em 0;
+    }
 
     section.section.join.bg-overlay {
-    height: 100vh;
-}
+        height: 100vh;
+    }
 
     .thanks article.content {
-    background-color: var(--overlay-color);
-    width: 100%;
-    padding: var(--spacing-small);
-}
+        background-color: var(--overlay-color);
+        width: 100%;
+        padding: var(--spacing-small);
+    }
 
     hr.hide {
-    display: block;
-}
+        display: block;
+    }
 
     .hero article.content {
-    color: var(--primary-color);
-    /* max-width: 60%; */
-    gap: var(--gap-medium);
-}
+        color: var(--primary-color);
+        /* max-width: 60%; */
+        gap: var(--gap-medium);
+    }
 
     .alpha-club.hero article.content {
-    color: var(--primary-color);
-    max-width: 60%;
-    gap: var(--gap-medium);
-}
+        color: var(--primary-color);
+        max-width: 60%;
+        gap: var(--gap-medium);
+    }
 
-       section.section.hero.index.bg-overlay::before {
-       display:flex;
-       background-image: url(./assets/home/empty_street.jpg);
-       /* height: 100vh; */ /* Set height to 100% to ensure it covers the parent */
-       animation: kenburns-zoom 30s infinite alternate; /* Add ken burns zoom animation */
-       overflow: hidden;
+    section.section.hero.index.bg-overlay::before {
+        display: flex;
+        background-image: url(./assets/home/empty_street.jpg);
+        /* height: 100vh; */
+        /* Set height to 100% to ensure it covers the parent */
+        animation: kenburns-zoom 30s infinite alternate;
+        /* Add ken burns zoom animation */
+        overflow: hidden;
     }
 
     section.section.hero.about-alpha.bg-overlay {
-    background-color: unset;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
+        background-color: unset;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
 
     section.section.alpha.index.bg-overlay {
-    position:relative;
-    overflow: hidden;
-}
+        position: relative;
+        overflow: hidden;
+    }
 
     section.section.alpha.index.bg-overlay::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(css/assets/alpha/asian_teen_book_libary_ai.jpg);
-    background-blend-mode: darken; /* Assuming darken blend mode is desired */
-    background-position: center; /* Assuming center position is desired */
-    background-repeat: no-repeat; /* Assuming no-repeat is desired */
-    background-size: cover;
-    z-index: -1; /* Ensure the pseudo-element is behind the content */
-}
-
- 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(css/assets/alpha/asian_teen_book_libary_ai.jpg);
+        background-blend-mode: darken;
+        /* Assuming darken blend mode is desired */
+        background-position: center;
+        /* Assuming center position is desired */
+        background-repeat: no-repeat;
+        /* Assuming no-repeat is desired */
+        background-size: cover;
+        z-index: -1;
+        /* Ensure the pseudo-element is behind the content */
+    }
 
     .header.alpha.bg-overlay {
-    height: auto;
-}
+        height: auto;
+    }
 
     .header-logo img {
-    display: block;
-    width: 250px;
-}
+        display: block;
+        width: 250px;
+    }
 
-    
-article.hero-content.about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
+    article.hero-content.about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
 
-      .index-content {
+    .index-content {
         display: flex;
         justify-content: center;
         /* min-height: 88vh; */
@@ -359,6 +354,10 @@ article.hero-content.about {
         font-size: 3em;
     }
 
+    .header-content h1 {
+        display: none;
+    }
+
     h2 {
         font-size: 2em;
     }
@@ -368,12 +367,12 @@ article.hero-content.about {
     }
 
     .full-width h2 {
-    width: 100%;
-    color: black;
-    font-weight: bold;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
+        width: 100%;
+        color: black;
+        font-weight: bold;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
 
     .testimonials-content {
         justify-content: center;
@@ -389,155 +388,175 @@ article.hero-content.about {
         flex: 1 1 20%;
     }
 
-.features li.card {
-    border: none;
-}
+    .features li.card {
+        border: none;
+    }
 
+    .full-width h2 {
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }
 
-
-
-.full-width h2 {
-    width: 100%;
-    color: white;
-    font-weight: bold;
-    background-color: black;
-}
-
-
-
-hr.display {
-    display: none;
-}
+    hr.display {
+        display: none;
+    }
 
     article.card {
-    gap: var(--gap-large);
-    max-width: 90%;
-    margin: 0;
-}
+        gap: var(--gap-large);
+        max-width: 90%;
+        margin: 0;
+    }
 
-    
-a.nav-link-join-blue {
-    width: fit-content;
-}
+    a.nav-link-join-blue {
+        width: fit-content;
+    }
 
     section.section.quote {
-    background-color: var(--primary-color);
-}
+        background-color: var(--primary-color);
+    }
 
     .quote h3,
     .quote p {
-        color:black;
+        color: black;
     }
 
-.card {
-    width: 90%;
-    margin-bottom: 4em;
-}
+    .card {
+        width: 90%;
+        margin-bottom: 4em;
+        gap: var(--gap-large);
+    }
 
-.card-text h3 {
-    padding: 0;
-    background-color: black;
-    width: 100%;
-    /* padding: var(--padding-btn); */
-    margin-top: 0;
-    color: var(--primary-color);
-    font-weight: unset;
-}
+    .card-text h3 {
+        padding: 0;
+        background-color: black;
+        width: 100%;
+        /* padding: var(--padding-btn); */
+        margin-top: 0;
+        color: var(--primary-color);
+        font-weight: unset;
+    }
 
     section.section.hero.about-alpha.bg-overlay::before {
-    display: flex;
-}
+        display: flex;
+    }
 
     .header.about-alpha.bg-overlay {
-    height: fit-content;
-}
+        height: fit-content;
+    }
 
     section.section.alpha-club.hero.bg-overlay {
-    height: 94vh;
-    position: relative;
-    background-color: unset;
-}
+        height: 94vh;
+        position: relative;
+        background-color: unset;
+    }
 
-        section.section.alpha-club.hero.bg-overlay::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(./assets/alpha/club/equip_your_child.jpg);
-            background-blend-mode: darken; /* Assuming darken blend mode is desired */
-            background-position: center; /* Assuming center position is desired */
-            background-repeat: no-repeat; /* Assuming no-repeat is desired */
-            background-size: cover;
-            z-index: -1; /* Ensure the pseudo-element is behind the content */
-}
+    section.section.alpha-club.hero.bg-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/alpha/club/equip_your_child.jpg);
+        /* Assuming this is the correct image */
+        background-blend-mode: darken;
+        /* Assuming darken blend mode is desired */
+        background-position: center;
+        /* Assuming center position is desired */
+        background-repeat: no-repeat;
+        /* Assuming no-repeat is desired */
+        background-size: cover;
+        z-index: -1;
+        /* Ensure the pseudo-element is behind the content */
+    }
 
     .claim h3 {
-    margin: 0 auto;
-}
+        margin: 0 auto;
+    }
 
-    
-.container-cards {
-    margin: 0;
-}
+    .container-cards {
+        margin: 0;
+    }
 
     .section.alpha-club.projects {
-    border-bottom: none;
-}
+        border-bottom: none;
+    }
 
-    ul.card-list li {border-bottom: 1px solid #ffffff40;}
+    ul.card-list li {
+        border-bottom: 1px solid #ffffff40;
+    }
 
     ul.card-list li.hidden {
-    border-bottom: 0px;
-}
+        border-bottom: 0px;
+    }
 
     .alpha-club .container {
-    margin: 0 5% 0 auto;
-    width: fit-content;
-    display: flex;
-    align-items: flex-end;
-    align-content: flex-end;
-}
+        margin: 0 5% 0 auto;
+        width: fit-content;
+        display: flex;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
 
     section.section.cta.laptop.bg-overlay .container {
-    height: 33vh;
-}
+        height: 33vh;
+    }
 
     img.eye {
-    width: fit-content;
-    max-height: 1em;
-    display: flex;
-}
+        width: fit-content;
+        max-height: 1em;
+        display: flex;
+    }
 
     .header .more {
-    display: none;
-}
+        display: none;
+    }
 
     .hero .more {
-    display: flex;
-    width: 15em;
-}
+        display: flex;
+        width: 15em;
+    }
 
     a.btn {
-    width: 15em;
-
+        width: 15em;
     }
-.header-logo {
-    height: auto;
-    display: flex;
-}
 
-.join-label-mobile {
-    display: none;
-}
+    .header-logo {
+        height: auto;
+        display: flex;
+    }
+
+    .join-label-mobile {
+        display: none;
+    }
+
+    .join-label-desktop {
+        display: inline;
+    }
+
     .join-label-desktop {
         display: none;
     }
+
     .join-label-mobile {
         display: inline;
+    }
+
+    section#about-hero-anchor {
+        position: relative;
+        padding: 0;
+    }
+
+    section#about-hero-anchor::before {
+        background-image: url(assets/about/cyborg_face_hero_color.jpg);
+    }
+
+    .hero-content.about {
+        /* min-height: 100vh; */
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
 }
-    .join-label-mobile {
-        display: inline;
-    }
