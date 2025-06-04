@@ -45,7 +45,7 @@ header .header.bg-overlay::before {
 
 .header.alpha.bg-overlay::before {
     background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
-background-position: center;
+background-position: right;
 }
 
 .header-logo {
