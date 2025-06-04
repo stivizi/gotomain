@@ -68,11 +68,11 @@ background-position: right;
 .header-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    /* gap: var(--spacing-medium) 0; */
+    gap: var(--spacing-medium) 0;
      /* Removed min-height */
     position: relative; /* Changed position from sticky to relative */
     top: 0;
