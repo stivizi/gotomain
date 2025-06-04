@@ -1,13 +1,17 @@
 /* Layout Styles  Updated */
 
-.header {
+.header.bg-overlay {
     /* Needed for the pseudo-element positioning */
     margin: 0;
     padding: 0;
     position: relative;
     width: 100vw;
     z-index: 0; /* Increased z-index to ensure it's above other elements */
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .header.alpha-club.bg-overlay::before {
@@ -68,11 +72,10 @@ background-position: right;
 .header-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    gap: var(--spacing-medium) 0;
+    gap: var(--spacing-large) 0;
      /* Removed min-height */
     position: relative; /* Changed position from sticky to relative */
     top: 0;
